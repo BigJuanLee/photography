@@ -8,7 +8,7 @@ img {  border: 0;display: block;}
 .container {min-width: 375px; width: 100%;box-sizing: border-box;}
 
 .header { display: flex; justify-content: space-between; align-items: center; padding: 8px 0 2px 13px;}
-
+.banner-box img {width: 100%;}
 .camera {width: 100%;height: 235px;position: relative;}
 .camera .border {position: absolute;left: 61px;top: 37px;width: 211px;height: 149px;border: 1px solid #302D2A;}
 .camera img {position: absolute;top: 59px;left: 88px;}
@@ -27,17 +27,18 @@ img {  border: 0;display: block;}
 /* .case-img {position: absolute;} */
 .case-img:last-child {margin-right: 0;}
 
-.service{box-sizing: border-box; width: 350px;height: 185px;background-image: url('../img/service-bg.png');background-size: 100% 100%;color: #fff;padding: 20px 0 10px 20px;}
+.service{margin: 0 auto; box-sizing: border-box; width: 350px;height: 185px;background-image: url('../img/service-bg.png');background-size: 100% 100%;color: #fff;padding: 20px 0 10px 20px;}
 .service .EN {position: relative;font-size: 18px;}
 .service .EN::after{position: absolute;top: 55px;left: 0;width: 106px;height: 1px;background-color: #FBFBFB ;content:''}
 .service .CH {margin-top: 31px;font-size: 15px;margin-bottom: 20px;}
 .service .btn {width: 67px;height: 19px;background: #302D2A;line-height: 19px;text-align: center;font-size: 12px;margin-bottom: 10px;}
 .service .btn a {color: #fff;}
 
-.meal {margin-top: 35px;height: 600px;background-image: url('../img/package-bg.png');padding: 15px 13px;text-align: center;}
+.meal {margin-top: 35px;min-height: 600px;background-image: url('../img/package-bg.png');padding: 15px 13px;text-align: center;}
 .set-meal .CH {color: #fff;}
 .set-meal .EN {margin-bottom: 17px;}
 .meal-item {margin-bottom: 17px;font-size: 12px;}
+.meal-item img {width: 100%;height: auto;}
 .meal-item .name {margin: 5px auto;color: #fff;}
 .meal-item .price {color: #918E8E;}
 
@@ -45,7 +46,7 @@ img {  border: 0;display: block;}
 .team .EN {margin-bottom: 20px;}
 .team-list {height: 220px;}
 .team-list .people {width: 167px;float: left;margin-right: 15px;text-align: center;font-size: 12px;}
-.team-list .people:last-child{margin-right: 0;}
+.team-list .people:last-child{margin-right: 0;float: right;}
 .team-list .people .name { margin: 6px auto 8px;}
 .team-list .people .desc {color: #727272;line-height: 15px;text-align: left;}
 
