@@ -64,7 +64,7 @@ img {border: 0;display: block;}
 .news .content img {float: left;}
 .news .content .text {float: right;width: 743px;padding-top: 130px;}
 .news .content .text-item {margin-bottom: 40px;}
-.news .content .text-item .title {font-size: 24px;}
+.news .content .text-item .title {font-size: 24px;text-align: left;margin-bottom: 5px;}
 .news .content .text-item .desc {font-size: 18px;line-height: 29px; color: #767676;}
 .news .content .button {margin-top: 0;}
 
