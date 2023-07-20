@@ -1,0 +1,62 @@
+/*总样式*/
+body,div,a,p,img,h1,h2,h3,h4,h5,h6,ul,li,more,br { margin: 0; padding: 0}
+h2,h3,h4 { font-weight: normal}
+a { display: block; text-decoration: none; color: #000;}
+ul,li { list-style-type: none;}
+img {  border: 0;display: block;}
+
+.container {min-width: 375px; width: 100%;box-sizing: border-box;}
+
+.header { display: flex; justify-content: space-between; align-items: center; padding: 8px 0 2px 13px;}
+
+.camera {width: 100%;height: 235px;position: relative;}
+.camera .border {position: absolute;left: 61px;top: 37px;width: 211px;height: 149px;border: 1px solid #302D2A;}
+.camera img {position: absolute;top: 59px;left: 88px;}
+
+.padding-content {padding: 0 13px;}
+
+.photography-title{font-size: 13px;margin-bottom: 10px;}
+.desc {font-size: 12px;color: #7F7E7E;line-height: 17px;margin-bottom: 13px;}
+.learn-more-btn {width: 61px;height: 19px;border: 1px solid #302D2A;line-height: 19px;text-align: center;font-size: 10px;margin: 13px auto 36px;}
+
+.presentation,.meal, .team {text-align: center;margin-bottom: 20px;}
+.presentation .CH,.set-meal .CH,.team .CH {font-size: 15px;font-weight: bold;}
+.presentation .EN, .set-meal .EN, .team .EN {font-size: 12px;color: #696968;}
+
+.case-img-container {height: 137px;margin-bottom: 20px;}
+.case-img {float: left;margin-right: 15px;}
+.case-img:last-child {margin-right: 0;}
+
+.service{box-sizing: border-box; width: 350px;height: 185px;background-image: url('../img/service-bg.png');background-size: 100% 100%;color: #fff;padding: 20px 0 10px 20px;}
+.service .EN {position: relative;font-size: 18px;}
+.service .EN::after{position: absolute;top: 55px;left: 0;width: 106px;height: 1px;background-color: #FBFBFB ;content:''}
+.service .CH {margin-top: 31px;font-size: 15px;margin-bottom: 20px;}
+.service .btn {width: 67px;height: 19px;background: #302D2A;line-height: 19px;text-align: center;font-size: 12px;margin-bottom: 10px;}
+.service .btn a {color: #fff;}
+
+.meal {margin-top: 35px;height: 600px;background-image: url('../img/package-bg.png');padding: 15px 13px;text-align: center;}
+.set-meal .CH {color: #fff;}
+.set-meal .EN {margin-bottom: 17px;}
+.meal-item {margin-bottom: 17px;font-size: 12px;}
+.meal-item .name {margin: 5px auto;color: #fff;}
+.meal-item .price {color: #918E8E;}
+
+.team {margin-top: 40px;}
+.team .EN {margin-bottom: 20px;}
+.team-list {height: 220px;}
+.team-list .people {width: 167px;float: left;margin-right: 15px;text-align: center;font-size: 12px;}
+.team-list .people:last-child{margin-right: 0;}
+.team-list .people .name { margin: 6px auto 8px;}
+.team-list .people .desc {color: #727272;line-height: 15px;text-align: left;}
+
+.footer {height: 164px;background: #302D2A;padding-top: 10px;font-size: 12px;}
+.footer .qr-code {margin: 10px auto;color: #fff;text-align: center;width: 150px;height: 80px;}
+.footer .code {float: left;margin-right: 15px;}
+.mobile, .email, .copyright {text-align: center;color: #ACABAB;}
+.email {padding-bottom: 10px;margin-bottom: 5px;border-bottom: 1px solid #5C5C5B;}
+
+
+
+
+
+

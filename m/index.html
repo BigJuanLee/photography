@@ -1,11 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style-mobile.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/mdui.css" />
 </head>
+
 <body>
-    
+    <div class="container main-content header" style="position: relative;">
+        <img src="./img/logo.png" width="85" height="25" alt="" srcset="">
+
+
+        <button class="mdui-btn app-btn" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons"><img
+                    style="cursor: pointer;" src="./img/more.png" width="16" height="12" alt="" srcset=""></i></button>
+    </div>
+
+    <div class="banner">
+        <div class="banner-box">
+            <div class="swiper lbt1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img//banner1.png" width="375" height="200" alt="" />
+                    </div>
+                    <div class="swiper-slide"><img src="./img/banner2.png" width="375" height="200" alt="" />
+                    </div>
+                    <div class="swiper-slide"><img src="./img/banner3.png" width="375" height="200" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="camera">
+        <div class="border"></div>
+        <img src="./img/camera.png" width="227" height="151" alt="" srcset="">
+    </div>
+
+    <div class="padding-content">
+        <div class="photography-title">一家专业的摄影工作室</div>
+        <p class="desc">二十世纪末叶以来，伴随着计算机在各个领域的迅速普及，
+            数字时代已经来临，给人们的工作和生活带来了新的冲击，
+            应运而生的数码相机，开拓了数字影像丰富的世界。数码相
+            机的诞生，从根本上改变了传统的摄影工艺和摄影体系，它
+            不仅影响并改变着摄影业的经营观念 、经营方法、管理及服
+            务，让每一位摄影工作者创作观念的更新。</p>
+        <div class="learn-more-btn">了解更多></div>
+
+        <div class="presentation">
+            <div class="CH">案例展示</div>
+            <div class="EN">Product presentation</div>
+        </div>
+
+        <div class="case-img-container">
+            <img class="case-img" src="./img/hunsha.png" width="167" height="137" alt="" srcset="">
+            <img class="case-img" src="./img/xiezhen.png" width="167" height="137" alt="" srcset="">
+        </div>
+
+        <div class="service">
+            <div class="EN"><span>professional</span> </br>
+                <div style="text-indent: 1em;">photography</div>
+            </div>
+            <div class="CH">让我们为您服务</div>
+            <div class="btn"><a href="#">咨询报价</a></div>
+            <div class="btn"><a href="#">摄影地点</a></div>
+        </div>
+    </div>
+
+    <div class="meal">
+        <div class="set-meal">
+            <div class="CH">摄影套餐</div>
+            <div class="EN">Set meal</div>
+            <div class="meal-item">
+                <img src="../img/packageA.png" width="350" height="222" alt="" srcset="">
+                <div class="name">摄影套餐A</div>
+                <div class="price">1699.00￥</div>
+            </div>
+
+            <div class="meal-item">
+                <img src="../img/packageB.png" width="350" height="222" alt="" srcset="">
+                <div class="name">摄影套餐B</div>
+                <div class="price">699.00￥</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="padding-content">
+        <div class="team">
+            <div class="CH">摄影团队</div>
+            <div class="EN">Photography team</div>
+        </div>
+
+        <div class="team-list">
+            <div class="people">
+                <img src="../img/team1.png" width="167" height="151" alt="" srcset="">
+                <div class="name">小林</div>
+                <p class="desc">照相机是一个教具，
+                    教给人们在没有相机
+                    时如何看世界。</p>
+            </div>
+            <div class="people">
+                <img src="../img/team2.png" width="167" height="151" alt="" srcset="">
+                <div class="name">叶子</div>
+                <p class="desc">摄影就是狩猎，快门
+                    就是扳机。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="qr-code">
+            <div class="code">
+                <img src="../img/qr-code.png" width="60" height="60" alt="" srcset="">
+                <div>微信</div>
+            </div>
+            <div class="code">
+                <img src="../img/qr-code.png" width="60" height="60" alt="" srcset="">
+                <div>微博</div>
+            </div>
+        </div>
+        <div class="mobile">
+            <span style="margin-right: 11px;">电话：0777-111 </span>
+            <span>地址：南宁市罗文大道</span>
+        </div>
+        <div class="email">
+            <span style="margin-right: 8px;">邮箱：123421@cc.com </span>
+            <span>营业时间：周一至周六8：00-18：00</span>
+        </div>
+        <div class="copyright">七点摄影工作室 版权所有</div>
+    </div>
 </body>
+
 </html>
+<script src="./js/swiper-bundle.js"></script>
+<script src="js/mdui.js"></script>
+<script>
+    var mySwiper1 = new Swiper('.lbt1', {
+        direction: 'horizontal', // 水平切换选项
+        loop: true, // 循环模式选项
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination1',
+            clickable: true,
+            // bulletClass : 'my-bullet'
+        },
+
+        // 如果需要前进后退按钮
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            // 执行后继续播放
+            disableOnInteraction: false,
+            // 鼠标悬停停止播放	
+            pauseOnMouseEnter: true,
+        },
+    })
+
+
+    var mySwiper2 = new Swiper('.lbt2', {
+        direction: 'horizontal', // 水平切换选项
+        loop: true, // 循环模式选项
+        effcet: 'fade',// 淡入淡出切换效果
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination2',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            // 执行后继续播放
+            disableOnInteraction: false,
+            // 鼠标悬停停止播放	
+            pauseOnMouseEnter: true,
+        },
+    })  
+</script>
