@@ -1,0 +1,103 @@
+/*总样式*/
+body,div,a,p,img,h1,h2,h3,h4,h5,h6,ul,li,more,br {margin: 0;padding: 0}
+h2,h3,h4 {font-weight: normal}
+a {display: block;text-decoration: none;color: #000;}
+ul,li {list-style-type: none;}
+img {border: 0;display: block;}
+
+.main-content {width: 1440px;margin: 0 auto;}
+.container {width: 100%;min-width: 375px;}
+
+.header { padding: 5px 0; display: flex;align-items: center;}
+.header img { margin-right: 255px; }
+.nav {display: flex;font-size: 24px;}
+.nav li {height: 55px;line-height: 55px;width: 155px;text-align: center;}
+.nav li:hover a{background: #C1B89B;color: #fff;}
+
+
+.banner {width: 100%;min-width: 375px;margin: 0 auto;/* background: #dac186; */}
+.banner .banner-box {/* width: 1440px; */width: 100%;margin: 0 auto;}
+.banner-box .swiper,
+.banner-box .swiper-wrapper,
+.banner-box .swiper-slide {width: 100%;max-width: 1920px;min-width: 375px;}
+
+.swiper-slide img {width: 100%;}
+
+.studio{margin-top: 270px;height: 480px;}
+.studio .img {width: 582px;height: 411px;border: 2px solid #302D2A;position: relative;float: left;}
+.studio .img img {position: absolute;top: 72px;left: 76px;}
+.studio .text {float: right;width: 712px;padding-top: 50px;}
+.studio .text .title {font-size: 30px;line-height: 84px;}
+.studio .text .content {font-size: 18px;color: #373737;line-height: 34px;margin-top: 44px;}
+.studio .text .button, .news .content .button {width: 132px;height: 40px;border: 1px solid #302D2A;line-height: 40px;text-align: center;margin-top: 125px;}
+
+.product{margin-top: 200px;}
+.product .title,.news .title, .team .title, .footer .title{text-align: center;}
+.product .title .CH, .news .title .CH, .team .title .CH, .footer .title .CH {display: block;font-size: 36px;font-weight: bold;letter-spacing: 1rem;margin-bottom: 5px;}
+.product .title .EN, .news .title .EN, .team .title .EN, .footer .title .EN {display: block;font-size: 18px;color: #696968;margin-bottom: 55px;}
+.product .img {display: flex;}
+.product .img .left {flex-shrink: 0;margin-right: 30px;color: #fff;background-image: url('../img/service-bg.png');background-size: 100% 100%; width: 418px;height: 684px;background-color: rgba(48, 45, 42, 0.75);padding: 38px 0 0 33px;}
+.product .img .left .EN{font-size: 36px;position: relative;}
+.product .img .left .EN::after{position: absolute;left: 0;top: 120px;width: 213px;height: 1px;background-color: #fff;content:''}
+.product .img .left .CH {font-size: 24px;margin: 70px 0 240px 0;}
+.product .img .left .button{width: 136px;height: 40px;background: #302D2A;line-height: 40px;text-align: center;margin-bottom: 30px;}
+.product .img .left .button a{color: #fff;}
+.product .img .right {display: grid;grid-template-columns: repeat(2,1fr);grid-gap: 27px 41px;}
+.product .img .right .product-item {width: 484px;text-align: center;font-size: 36px;color: #fff;font-weight: bold;background-size: 100% 100%;display: grid;align-items: center;}
+.product .img .right .product1 {background-image: url('../img/meishi.png');}
+.product .img .right .product2 {background-image: url('../img/ziran.png');}
+.product .img .right .product3 {background-image: url('../img/hunsha.png');}
+.product .img .right .product4 {background-image: url('../img/xiezhen.png');}
+
+.package-outer {padding-bottom: 30px; margin-top: 200px; height: 565px;background-image: url('../img/package-bg.png');background-size: 100% 100%;opacity: 0.96;}
+.package-inner {padding: 30px 0;}
+.package-inner .CH {font-size: 36px;font-weight: bold;color: #fff;margin-bottom: 10px;}
+.package-inner .EN {font-size: 18px;color: #696968;margin-bottom: 25px;}
+.package-inner .package-list {color: #fff;}
+.package-inner .package-list .package-item {float: left;margin-right: 30px;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.package-inner .package-list .package-item:last-child {margin-right: 0;}
+.package-inner .package-list .package-item img, .package-inner .package-list .package-item .title {margin-bottom: 18px;}
+.package-inner .package-list .package-item .title {font-size: 24px;}
+.package-inner .package-list .package-item .price {font-size: 16px;}
+
+.news {margin-top: 200px;height: 905px;}
+.news .content img {float: left;}
+.news .content .text {float: right;width: 743px;padding-top: 130px;}
+.news .content .text-item {margin-bottom: 40px;}
+.news .content .text-item .title {font-size: 24px;}
+.news .content .text-item .desc {font-size: 18px;line-height: 29px; color: #767676;}
+.news .content .button {margin-top: 0;}
+
+.team {margin: 200px auto 300px;height: 685px;}
+.team-item {float: left;margin-right: 99px;width: 414px;}
+.team-item img {margin-bottom: 20px;}
+.team-item .name {font-size: 30px;margin-bottom: 15px;text-align: center;}
+.team-item .desc {font-size: 24px;color: #727272;line-height: 29px;}
+.team-item:last-child {margin-right: 0;}
+
+.footer {min-height: 440px;background-color: #302D2A;padding: 30px 0 0;}
+.footer .title .CH{color: #fff;}
+.footer .content .content1,.footer .content .content2,.footer .content .content3{float: left;}
+.footer .content .content1{margin-right: 310px;color: #ACABAB;}
+.footer .content .content1 div{margin-bottom: 12px;}
+.footer .content .content2{margin-right: 345px;}
+.footer .content .content2 input{color: #fff;background-color: transparent;outline: none;border: 1px solid #FFFFFF;width: 220px;height: 32px;margin-bottom: 20px;display: block;padding: 8px 0 8px 14px;box-sizing: border-box;}
+.footer .content .content2 input::-webkit-input-placeholder{color: #fff;}
+.footer .content .content2 .button {width: 110px;height: 32px;border: 1px solid #959494;text-align: center;line-height: 32px;}
+.footer .content .content2 .button a{color: #fff;}
+.footer .content .content3{color: #fff;text-align: center;}
+.footer .content .content3 div {float: left;width: 118px;margin-right: 30px;}
+.footer .content {height: 140px;}
+.footer .copyright {margin-top: 50px;padding-top: 25px;border-top: 1px solid #5C5C5B;text-align: center;font-size: 18px;color: #A6A5A5;}
+/* .pagination { display: flex; margin: 30px auto;}
+.pagination .last,
+.pagination .next { width: 76px;height: 32px;line-height: 32px;text-align: center;border: 1px solid #A0A0A0;borderradius: 5px;color: #A0A0A0;}
+.pagination .number {width: 25px;height: 32px;line-height: 32px;border-radius: 5px;text-align: center;border: 1px solid #A0A0A0;color: #A0A0A0;}
+.pagination .number:hover,
+.pagination .last:hover,
+.pagination .next:hover { background: #407DB3;}
+.pagination a,
+.pagination div { margin-right: 5px;}
+.pagination a { margin-bottom: 0 !important;}
+.pagination a:hover {color: #A0A0A0 !important;} */
+
