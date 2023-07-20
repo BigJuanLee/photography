@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+</head>
+
+<body>
+    <div class="container case">
+        <div class="header main-content">
+            <img src="./img/logo.png" width="360" height="45" alt="" srcset="">
+            <ul class="nav">
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">新闻动态</a></li>
+                <li><a href="case.html">服务分类</a></li>
+                <li><a href="#">在线预约</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+
+        <div class="banner">
+            <div class="banner-box">
+                <div class="swiper lbt1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/banner.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="./img/banner1.png" alt="" /></div>
+                    </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content crumb">
+            <span>当前位置：</span>
+            <span><a href="index.html">网站首页</a></span>
+            <span>></span>
+            <span><a href="#" class="active-link">服务类型</a></span>
+        </div>
+
+        <div class="title">
+            <span class="CH">服务类型</span>
+            <span class="EN">People photo</span>
+        </div>
+
+        <ul class="service-type-nav main-content">
+            <li><a href="#">美食摄影</a></li>
+            <li><a href="#">自然风光</a></li>
+            <li><a href="#">婚纱摄影</a></li>
+            <li><a href="#">人物写真</a></li>
+        </ul>
+
+        <div class="list main-content">
+            <div class="item">
+                <img src="./img/people1.png" width="430" height="455" alt="" srcset="">
+                <div class="name">人物写真</div>
+                <div class="number">001</div>
+            </div>
+            <div class="item">
+                <img src="./img/people2.png" width="430" height="455" alt="" srcset="">
+                <div class="name">人物写真</div>
+                <div class="number">002</div>
+            </div>
+            <div class="item">
+                <img src="./img/people3.png" width="430" height="455" alt="" srcset="">
+                <div class="name">人物写真</div>
+                <div class="number">003</div>
+            </div>
+            <div class="item">
+                <img src="./img/people4.png" width="430" height="455" alt="" srcset="">
+                <div class="name">人物写真</div>
+                <div class="number">004</div>
+            </div>
+            <div class="item">
+                <img src="./img/people5.png" width="430" height="455" alt="" srcset="">
+                <div class="name">人物写真</div>
+                <div class="number">005</div>
+            </div>
+            <div class="item">
+                <img src="./img/people6.png" width="430" height="455" alt="" srcset="">
+                <div class="name">人物写真</div>
+                <div class="number">006</div>
+            </div>
+            <div class="item">
+                <img src="./img/people7.png" width="430" height="455" alt="" srcset="">
+                <div class="name">人物写真</div>
+                <div class="number">007</div>
+            </div>
+            <div class="item">
+                <img src="./img/people8.png" width="430" height="455" alt="" srcset="">
+                <div class="name">人物写真</div>
+                <div class="number">008</div>
+            </div>
+            <div class="item">
+                <img src="./img/people9.png" width="430" height="455" alt="" srcset="">
+                <div class="name">人物写真</div>
+                <div class="number">009</div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#" class="last">上一页</a>
+            <a href="#" class="number">1</a>
+            <a href="#" class="number">2</a>
+            <a href="#" class="number">3</a>
+            <div style="align-self: flex-end;">...</div>
+            <a href="#" class="next">下一页</a>
+        </div>
+
+        <div class="footer container">
+            <div class="title">
+                <span class="CH">联系我们</span>
+                <span class="EN">Product presentation</span>
+            </div>
+            <div class="content main-content">
+                <div class="content1">
+                    <div>七点摄影服务</div>
+                    <div>地址：南宁市罗文大道</div>
+                    <div>电话：0777-111</div>
+                    <div>邮箱：123421@cc.com</div>
+                    <div>营业时间：周一至周六8：00-18：00</div>
+                </div>
+                <div class="content2">
+                    <input type="text" placeholder="姓名">
+                    <input type="text" placeholder="手机">
+                    <div class="button"><a href="#">提交</a></div>
+                </div>
+                <div class="content3">
+                    <div>
+                        <img src="./img/qr-code.png" width="118" height="118" alt="" srcset="">
+                        <div class="">微信</div>
+                    </div>
+                    <div>
+                        <img src="./img/qr-code.png" width="118" height="118" alt="" srcset="">
+                        <div class="">微博</div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"> 七点摄影工作室 版权所有 </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/swiper-bundle.js"></script>
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script>
+    var mySwiper1 = new Swiper('.lbt1', {
+        direction: 'horizontal', // 水平切换选项
+        loop: true, // 循环模式选项
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            // 执行后继续播放
+            disableOnInteraction: false,
+            // 鼠标悬停停止播放	
+            pauseOnMouseEnter: true,
+        },
+    })
+</script>
